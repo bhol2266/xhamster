@@ -141,17 +141,17 @@ export const PasswordReset = () => {
 
 
 
-        <div className="relative bg-semiblack  rounded-lg  px-6 lg:px-0 py-8">
+        <div className="relative bg-white  rounded-lg  px-6 lg:px-0 py-8">
 
 
-            <IoIosCloseCircleOutline onClick={() => { setLoginFormVisible(true); setPasswordResetVisible(false); setLoginModalVisible(false); resetForm() }} className="cursor-pointer absolute text-white text-[32px] lg:text-[34px] right-4 top-4" />
+            <IoIosCloseCircleOutline onClick={() => { setLoginFormVisible(true); setPasswordResetVisible(false); setLoginModalVisible(false); resetForm() }} className="cursor-pointer absolute text-semiblack text-[32px] lg:text-[34px] right-4 top-4" />
 
 
 
             <div className='px-[28px]  w-full'>
 
 
-                <h2 className='mb-[30px] font-inter text-[18px] text-white'>
+                <h2 className='mb-[30px] font-inter text-[18px] text-semiblack'>
                     Reset Password
                 </h2>
 
@@ -159,7 +159,7 @@ export const PasswordReset = () => {
 
                 <div className='flex flex-col items-center justify-start  rounded-lg shadow-lg p-4'>
 
-                    <h2 className='text-white font-inter text-[14px] xl:text-[16px] w-full h-[26px] mb-2'>
+                    <h2 className='text-semiblack font-inter text-[14px] xl:text-[16px] w-full h-[26px] mb-2'>
                         Please enter your registered Email
                     </h2>
 
@@ -176,7 +176,7 @@ export const PasswordReset = () => {
                             disabled={OTP_Sent !== 0}
                             onChange={e => setEmail(e.target.value)}
                             placeholder='Email'
-                            className="w-[250px] text-xs font-inter rounded-lg bg-transparent py-1.5 px-2 text-white border-[1px] border-gray-300 placeholder:text-gray-400 sm:text-sm leading-6"
+                            className="w-[250px] text-xs font-inter rounded-lg bg-transparent py-1.5 px-2 text-semiblack border-[1px] border-gray-300 placeholder:text-gray-400 sm:text-sm leading-6"
                         />
                         {OTP_Sent !== 0 && (
                             <button
@@ -221,14 +221,14 @@ export const PasswordReset = () => {
 
                         <div className='flex flex-col items-center my-2'>
 
-                            <h2 className=' text-left text-white font-inter text-[12px] xl:text-[14px] w-full h-[26px] mt-[21px]'>
+                            <h2 className=' text-left text-semiblack font-inter text-[12px] xl:text-[14px] w-full h-[26px] mt-[21px]'>
                                 {`Please enter the 4-digit code we sent to
                         ${Email}.`}
                             </h2>
 
                             <div className="divOuter my-[20px] mt-[30px]">
                                 <div className="divInner">
-                                    <input value={OTP.substring(0, 4)} onChange={e => { if (e.target.value.length < 5) { setOTP(e.target.value) } }} className="partitioned bg-transparent text-white" type="number" maxLength="4" />
+                                    <input value={OTP.substring(0, 4)} onChange={e => { if (e.target.value.length < 5) { setOTP(e.target.value) } }} className="partitioned bg-transparent text-semiblack" type="number" maxLength="4" />
                                 </div>
                             </div>
 
@@ -238,10 +238,10 @@ export const PasswordReset = () => {
 
                             <div className='flex flex-col items-center justify-start w-full space-y-3'>
 
-                                <label className=" text-[14px] xl:text-[16px] w-full  text-white pb-[1px] block  text-left  mt-2">Set New Password</label>
+                                <label className=" text-[14px] xl:text-[16px] w-full  text-semiblack pb-[1px] block  text-left  mt-2">Set New Password</label>
 
-                                <input onChange={e => { setpassword(e.target.value) }} required type="password" id='email' name='email' className="w-full text-xs font-inter rounded-lg bg-transparent py-2 px-2 text-white border-[1px] border-gray-300 placeholder:text-gray-400 sm:text-sm" placeholder='New Password' />
-                                <input onChange={e => { setretypePassword(e.target.value) }} required type="password" id='email' name='email' className="w-full text-xs font-inter rounded-lg bg-transparent py-2 px-2 text-white border-[1px] border-gray-300 placeholder:text-gray-400 sm:text-sm" placeholder='Retype New Password' />
+                                <input onChange={e => { setpassword(e.target.value) }} required type="password" id='email' name='email' className="w-full text-xs font-inter rounded-lg bg-transparent py-2 px-2 text-semiblack border-[1px] border-gray-300 placeholder:text-gray-400 sm:text-sm" placeholder='New Password' />
+                                <input onChange={e => { setretypePassword(e.target.value) }} required type="password" id='email' name='email' className="w-full text-xs font-inter rounded-lg bg-transparent py-2 px-2 text-semiblack border-[1px] border-gray-300 placeholder:text-gray-400 sm:text-sm" placeholder='Retype New Password' />
                             </div>
                         </div>
                     }

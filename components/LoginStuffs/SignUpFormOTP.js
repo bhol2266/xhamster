@@ -129,30 +129,30 @@ export const SignUpFormOTP = () => {
 
 
 
-        <div className="relative bg-semiblack  rounded-lg  px-6 lg:px-0 py-10  ">
+        <div className="relative bg-white  rounded-lg  px-6 lg:px-0 py-10  ">
 
 
-            <IoIosCloseCircleOutline onClick={() => { setLoginFormVisible(true); setOTPFormVisible(false); setLoginModalVisible(false); resetStates() }} className="cursor-pointer absolute text-white text-[32px] lg:text-[34px] right-4 top-4" />
+            <IoIosCloseCircleOutline onClick={() => { setLoginFormVisible(true); setOTPFormVisible(false); setLoginModalVisible(false); resetStates() }} className="cursor-pointer absolute text-semiblack text-[32px] lg:text-[34px] right-4 top-4" />
 
 
             <div className='px-[28px]  w-full'>
 
 
-                <h2 className='mt-[20px] font-inter text-[18px] text-white font-inter'>
+                <h2 className='mt-[20px] font-inter text-[18px] text-semiblack'>
                     Enter Verification Code
                 </h2>
 
 
 
                 <div className='flex flex-col items-center   rounded-lg  shadow-lg mt-8 px-4 pb-4'>
-                    <h2 className=' text-center text-white font-inter text-[14px] xl:text-[16px] w-full h-[26px] mt-[21px] text-white font-medium'>
+                    <h2 className=' text-center text-semiblack font-inter text-[14px] xl:text-[16px] w-full h-[26px] mt-[21px] text-semiblack font-medium'>
                         {`Please enter the 4-digit code we sent to    ${EmailOTP}.`}
                     </h2>
 
 
                     <div className="divOuter mt-[30px]">
                         <div className="divInner">
-                            <input value={OTP.substring(0, 4)} onChange={e => { if (e.target.value.length < 5) { setOTP(e.target.value) } }} className="partitioned bg-transparent text-white font-inter font-bold" type="number" maxLength="4" />
+                            <input value={OTP.substring(0, 4)} onChange={e => { if (e.target.value.length < 5) { setOTP(e.target.value) } }} className="partitioned bg-transparent text-semiblack font-inter font-bold" type="number" maxLength="4" />
                         </div>
                     </div>
 
@@ -162,7 +162,7 @@ export const SignUpFormOTP = () => {
 
 
 
-                    <h2 className='text-center w-full font-inter text-[13px] lg:text-[15px] mt-[14px] text-white'>
+                    <h2 className='text-center w-full font-inter text-[13px] lg:text-[15px] mt-[14px] text-semiblack'>
                         By continuing, you agree to Chutlunds&apos;s{' '}
                         <Link legacyBehavior href="/terms">
                             <a className="text-theme_red hover:underline"> Terms of Use</a>
@@ -189,11 +189,11 @@ export const SignUpFormOTP = () => {
                         <div className=' flex flex-col space-y-2'>
 
                             {resentOTP === 0 &&
-                                <button onClick={resendOTP} className='font-normal text-[14px] text-center w-[154px] py-2  mx-auto  text-white border-[1px] border-gray-200 rounded-lg hover:text-semiblack hover:bg-gray-200 block'>Re-send OTP</button>
+                                <button onClick={resendOTP} className='font-normal text-[14px] text-center w-[154px] py-2  mx-auto  text-semiblack border-[1px] border-gray-200 rounded-lg hover:text-semiblack hover:bg-gray-200 block'>Re-send OTP</button>
                             }
 
 
-                            <button onClick={verifyOTP} className='font-normal text-[14px] text-center w-[154px] py-2 mt-2  mx-auto  text-white border-[1px] border-gray-200 rounded-lg hover:text-semiblack hover:bg-gray-200 block'>Continue</button>
+                            <button onClick={verifyOTP} className='font-normal text-[14px] text-center w-[154px] py-2 mt-2  mx-auto  text-semiblack border-[1px] border-gray-200 rounded-lg hover:text-semiblack hover:bg-gray-200 block'>Continue</button>
                         </div>
 
                     }

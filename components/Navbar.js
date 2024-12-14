@@ -322,7 +322,7 @@ function Navbar() {
                                 value={searchKey}
                                 onChange={getSuggestedTags}
                                 ref={searchInputref}
-                                className="w-full h-[35px] px-4 text-sm text-white border-[0.8px] border-semiblack rounded-[15px] bg-transparent outline-none"
+                                className="w-full h-[35px] px-4 text-sm text-semiblack border-[0.8px] border-semiblack rounded-[15px] bg-transparent outline-none"
                                 type="text"
                                 placeholder="Search your favourite videos"
                             />
@@ -330,7 +330,7 @@ function Navbar() {
                         <div className="w-[18%]">
                             <button
                                 type="submit"
-                                className="w-full p-2 text-sm text-white bg-button rounded-[15px] hover:bg-button_hover"
+                                className="w-full p-2 text-sm text-semiblack bg-button rounded-[15px] hover:bg-button_hover"
                             >
                                 Search
                             </button>
@@ -340,12 +340,12 @@ function Navbar() {
 
                     </form>
                     {showSuggested &&
-                        <div className='bg-semiblack max-h-[300px] mt-1.5 z-50  overflow-scroll scrollbar-hide'>
+                        <div className=' max-h-[300px] mt-1.5 z-50  overflow-scroll scrollbar-hide'>
                             {tags.map(tag => {
                                 return (
                                     <div key={tag} onClick={() => {
                                         setsearchKey(tag); setshowSuggested(false); router.push(`/search/${tag.trim()}`)
-                                    }} className='flex items-center space-x-2 p-2  cursor-pointer hover:bg-gray-200 pl-4 hover:rounded-[15px] hover:text-semiblack text-white'>
+                                    }} className='flex items-center space-x-2 p-2  cursor-pointer hover:bg-gray-200 pl-4 hover:rounded-[15px] hover:text-semiblack text-semiblack'>
                                         {/* <img src='/login/history.png' className='h-[20px]' /> */}
                                         <p className='text-[13px] fontinter  '>{tag}</p>
 

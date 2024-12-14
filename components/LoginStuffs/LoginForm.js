@@ -42,6 +42,11 @@ export const LoginForm = () => {
             authUrl = `https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=${process.env.GOOGLE_CLIENT_ID}&redirect_uri=${REDIRECT_URI4}&scope=${scope}`;
 
         }
+        if (currentHost.includes("xhamster.gg")) {
+            const REDIRECT_URI5 = "https://www.xhamster.gg/api/auth/xhamster/callback"
+            authUrl = `https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=${process.env.GOOGLE_CLIENT_ID}&redirect_uri=${REDIRECT_URI5}&scope=${scope}`;
+
+        }
         window.location.href = authUrl;
 
     }
@@ -117,21 +122,21 @@ export const LoginForm = () => {
     return (
 
 
-        <div className="relative bg-semiblack  rounded-lg  px-6  py-10  ">
+        <div className="relative bg-white  rounded-lg  px-6  py-10  ">
 
 
-            <IoIosCloseCircleOutline onClick={() => { setLoginModalVisible(false) }} className="cursor-pointer absolute text-white text-[32px] lg:text-[34px] right-4 top-4" />
+            <IoIosCloseCircleOutline onClick={() => { setLoginModalVisible(false) }} className="cursor-pointer absolute text-semiblack text-[32px] lg:text-[34px] right-4 top-4" />
 
             <div className="flex flex-col justify-center">
 
                 <img src='/logo.png' alt="chutlunds-logo" className='w-[200px] mx-auto  lg:w-[220px] mx-auto lg:-mt-2' />
-                <p className='mb-6 font-inter text-white text-center text font-dancing text-2xl'>Unleash your desires!   </p>
+                <p className='mb-6 font-inter text-semiblack text-center text font-dancing text-2xl'>Unleash your desires!   </p>
 
 
                 <div className="">
                     <form className="space-y-5" action="#" method="POST" onSubmit={handleSubmit}>
                         <div className=''>
-                            <label htmlFor="email" className="text-sm font-medium leading-6 text-white pl-1">Email address</label>
+                            <label htmlFor="email" className="text-sm font-medium leading-6 text-semiblack pl-1">Email address</label>
                             <div className="mt-1">
                                 <input
                                     id="email"
@@ -140,13 +145,13 @@ export const LoginForm = () => {
                                     autoComplete="email"
                                     required
                                     placeholder='Email'
-                                    className="w-full text-xs font-inter rounded-lg bg-transparent py-2 px-2 text-white border-[1px] border-gray-300 placeholder:text-gray-400 sm:text-sm"
+                                    className="w-full text-xs font-inter rounded-lg bg-transparent py-2 px-2 text-semiblack border-[1px] border-gray-300 placeholder:text-gray-400 sm:text-sm"
                                 />
                             </div>
                         </div>
 
                         <div className='  '>
-                            <label htmlFor="password" className="text-sm font-medium leading-6 text-white pl-1">Password</label>
+                            <label htmlFor="password" className="text-sm font-medium leading-6 text-semiblack pl-1">Password</label>
                             <div className="mt-1">
                                 <input
                                     id="password"
@@ -155,7 +160,7 @@ export const LoginForm = () => {
                                     autoComplete="current-password"
                                     required
                                     placeholder='Password'
-                                    className="w-full text-xs font-inter rounded-lg bg-transparent py-2 px-2 text-white border-[1px] border-gray-300 placeholder:text-gray-400 sm:text-sm"
+                                    className="w-full text-xs font-inter rounded-lg bg-transparent py-2 px-2 text-semiblack border-[1px] border-gray-300 placeholder:text-gray-400 sm:text-sm"
                                 />
                             </div>
                         </div>
@@ -179,10 +184,10 @@ export const LoginForm = () => {
                     </form>
 
 
-                    <p onClick={() => { setPasswordResetVisible(true); setLoginFormVisible(false) }} className="cursor-pointer mt-6 mb-2 text-center text-sm text-white">
+                    <p onClick={() => { setPasswordResetVisible(true); setLoginFormVisible(false) }} className="cursor-pointer mt-6 mb-2 text-center text-sm text-semiblack">
                         Forgot your password?
                     </p>
-                    <p className="mb-2 text-center text-sm text-white">
+                    <p className="mb-2 text-center text-sm text-semiblack">
                         Don't have an account?
                         <span onClick={() => { setSignUpFormVisible(true); setLoginFormVisible(false) }} className="underline cursor-pointer text-theme_red">Register here</span>
                     </p>
@@ -192,7 +197,7 @@ export const LoginForm = () => {
                     <div className="w-full flex items-center justify-center my-2">
                         <hr className="flex-grow border-gray-300 my-2 " />
 
-                        <p className='my-4 w-fit mx-2 font-inter text-white text-xs'>  or continue with</p>
+                        <p className='my-4 w-fit mx-2 font-inter text-semiblack text-xs'>  or continue with</p>
 
                         <hr className="flex-grow border-gray-300 my-2" />
                     </div>
@@ -200,18 +205,18 @@ export const LoginForm = () => {
                     <div className="w-full flex mb-5  mx-auto  space-x-4 ">
                         <div onClick={() => SignInButton('google')} className="group hover:bg-slate-200 w-full  flex items-center justify-center space-x-2 cursor-pointer py-1.5  rounded-md border-[1px] border-gray-200">
                             <img src='/login/google.png' className='lg:h-[38px] object-contain h-[22px] w-[22px] cursor-pointer ml-1' alt="Google" />
-                            <h2 className=' font-inter text-white text-[11px] lg:text-[14px] group-hover:text-semiblack'>Google</h2>
+                            <h2 className=' font-inter text-semiblack text-[11px] lg:text-[14px] group-hover:text-semiblack'>Google</h2>
                         </div>
 
                         <div onClick={() => SignInButton('google')} className="group hover:bg-slate-200 w-full flex items-center justify-center space-x-2 cursor-pointer py-1.5  rounded-md border-[1px] border-gray-200">
                             <img src='/login/facebook.png' className='lg:h-[40px] object-contain h-[24px] w-[24px] cursor-pointer ml-1' alt="Facebook" />
-                            <h2 className=' font-inter text-white text-[11px] lg:text-[14px] group-hover:text-semiblack'>Facebook</h2>
+                            <h2 className=' font-inter text-semiblack text-[11px] lg:text-[14px] group-hover:text-semiblack'>Facebook</h2>
                         </div>
                     </div>
 
 
                     <div className=''>
-                        <p className='text-xs text-center text-white font-inter whitespace-nowrap overflow-hidden text-ellipsis'>
+                        <p className='text-xs text-center text-semiblack font-inter whitespace-nowrap overflow-hidden text-ellipsis'>
                             By Registering, I certify that I am over 18 years old and I agree to
                         </p>
                         <Link href="/terms">
