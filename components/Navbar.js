@@ -226,13 +226,13 @@ function Navbar() {
                                             leaveFrom="transform opacity-100 scale-100"
                                             leaveTo="transform opacity-0 scale-95"
                                         >
-                                            <Menu.Items className="flex flex-col justify-start bg-neutral-600 origin-top-right absolute -right-[50px] lg:-right-[125px] mt-3  w-[200px] rounded-md shadow-lg  ring-1 ring-black ring-opacity-5 focus:outline-none z-20 pb-4">
+                                            <Menu.Items className="flex flex-col border-gray-200 border-[1px] justify-start bg-white origin-top-right absolute -right-[50px] lg:-right-[125px] mt-3  w-[200px] rounded-md shadow-lg  ring-1 ring-black ring-opacity-5 focus:outline-none z-20 pb-4">
 
 
 
                                                 {!user &&
                                                     <Menu.Item>
-                                                        <button onClick={() => setLoginModalVisible(true)} className='block_popunder text-white w-[150px] h-[30px] text-[11px] font-inter px-[25px] py-[7px] bg-button hover:bg-button_hover rounded mt-[24px] mx-auto'>
+                                                        <button onClick={() => setLoginModalVisible(true)} className='block_popunder text-semiblack w-[150px] h-[30px] text-[11px] font-inter px-[25px] py-[7px] bg-button hover:bg-button_hover rounded mt-[24px] mx-auto'>
                                                             Sign In / Sign Up
                                                         </button>
                                                     </Menu.Item>
@@ -247,14 +247,14 @@ function Navbar() {
 
                                                 {user &&
                                                     <Menu.Item>
-                                                        <button onClick={signOut_method} className='text-white w-[150px] h-[30px] text-[11px] font-inter px-[25px] py-[7px] bg-button hover:bg-button_hover rounded mt-[8px] mx-auto'>
+                                                        <button onClick={signOut_method} className='text-semiblack w-[150px] h-[30px] text-[11px] font-inter px-[25px] py-[7px] bg-button hover:bg-button_hover rounded mt-[8px] mx-auto'>
                                                             Sign Out
                                                         </button>
                                                     </Menu.Item>
                                                 }
 
                                                 <Menu.Item>
-                                                    <h2 className='cursor-pointer text-[11px] font-DMsans  w-fit mx-auto mb-28px mt-[14px]'>Need Help ?</h2>
+                                                    <h2 className='cursor-pointer text-[11px] font-DMsans text-semiblack  w-fit mx-auto mb-28px mt-[14px]'>Need Help ?</h2>
                                                 </Menu.Item>
 
                                             </Menu.Items>
