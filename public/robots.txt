@@ -2,9 +2,9 @@ User-agent: *
 Disallow: /pornstar/query
 Disallow: /search/query   
 Disallow: /category/query
-Disallow: http://chutlunds.com/
-Disallow: https://chutlunds.com/
+Disallow: http://xhamster.gg/
+Disallow: https://xhamster.gg/
 Allow: /
 
 
-Sitemap: https://www.chutlunds.com/sitemap.xml
+Sitemap: https://www.xhamster.gg/sitemap.xml
