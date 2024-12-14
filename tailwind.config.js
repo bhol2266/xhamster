@@ -34,10 +34,10 @@ module.exports = {
         'github': '#24292F',
         'color': '#414a4c',
         'theme': '#13274F',
-        'button': '#6C6C6C ',
-        'button_hover': '#8C8C8C',
+        'button': '#d1d5db ',
+        'button_hover': '#9ca3af',
         'semiblack': '#232b2b',
-        'theme_yellow': '#FFBB00',
+        'theme_red': '#ef4444',
 
       },
       fontFamily: {

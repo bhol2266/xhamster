@@ -162,9 +162,9 @@ function Navbar() {
 
     return (
 
-        <div className='font-inter bg-semiblack  shadow'>
+        <div className='font-inter  shadow'>
 
-            <div className=" text-white p-2  lg:hidden">
+            <div className=" p-2  lg:hidden">
 
                 <Disclosure as="nav" >
                     {({ open }) => (
@@ -199,8 +199,8 @@ function Navbar() {
 
                                 <div className='flex items-center'>
 
-                                    <div onClick={handleSearchIconClick} className=' lg:hidden mr-2 cursor-pointer p-2  hover:bg-button hover:text-white rounded-md '>
-                                        <SearchIcon className='h-6 w-6' />
+                                    <div onClick={handleSearchIconClick} className=' lg:hidden mr-2 cursor-pointer p-2  hover:bg-button rounded-md '>
+                                        <SearchIcon className='h-6 w-6 ' />
                                     </div>
 
                                     <Menu as="div" className="relative mx-1 mr-2">
@@ -262,7 +262,7 @@ function Navbar() {
                                     </Menu>
 
 
-                                    <Disclosure.Button className="lg:hidden items-center justify-center rounded-md text-white hover:bg-button p-2">
+                                    <Disclosure.Button className="lg:hidden items-center justify-center rounded-md text-semiblack hover:bg-button p-2">
                                         <span className="sr-only">Open main menu</span>
                                         {open ? (
                                             <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -297,7 +297,7 @@ function Navbar() {
                                                 <Disclosure.Button
                                                     as="a"
                                                     className={classNames(
-                                                        item.current ? 'bg-gray-200 text-semiblack' : 'text-gray-300 hover:bg-gray-200 hover:text-semiblack',
+                                                        item.current ? 'bg-gray-200 text-semiblack font-semibold' : 'text-gray-600 hover:bg-gray-200 ',
                                                         'block px-3 py-2 rounded-md text-base font-medium'
                                                     )}
                                                     aria-current={item.current ? 'page' : undefined}
@@ -322,7 +322,7 @@ function Navbar() {
                                 value={searchKey}
                                 onChange={getSuggestedTags}
                                 ref={searchInputref}
-                                className="w-full h-[35px] px-4 text-sm text-white border-[0.8px] border-[#E5E5E5] rounded-[15px] bg-transparent outline-none"
+                                className="w-full h-[35px] px-4 text-sm text-white border-[0.8px] border-semiblack rounded-[15px] bg-transparent outline-none"
                                 type="text"
                                 placeholder="Search your favourite videos"
                             />
@@ -366,7 +366,7 @@ function Navbar() {
             <div className='flex justify-around items-center lg:hidden font-arial shadow-lg mb-2'>
                 <Link href='/' legacyBehavior>
                     <a
-                        className={`sm:text-xl xl:text-[28px] text-md text-white text-center p-1 border-b-[3px] ${currentPath === '/' ? 'border-theme_yellow' : 'hover:border-theme_yellow border-transparent'}`}
+                        className={`sm:text-xl xl:text-[28px] text-md text-semiblack text-center p-1 border-b-[3px] ${currentPath === '/' ? 'border-theme_red' : 'hover:border-theme_red border-transparent'}`}
                         rel="dofollow"
                     >
                         Home
@@ -375,7 +375,7 @@ function Navbar() {
 
                 <Link href='/category' legacyBehavior>
                     <a
-                        className={`sm:text-xl xl:text-[28px] text-md text-white text-center p-1 border-b-[3px] ${currentPath === '/category' ? 'border-theme_yellow' : 'hover:border-theme_yellow border-transparent'}`}
+                        className={`sm:text-xl xl:text-[28px] text-md text-semiblack text-center p-1 border-b-[3px] ${currentPath === '/category' ? 'border-theme_red' : 'hover:border-theme_red border-transparent'}`}
                         rel="dofollow"
                     >
                         Categories
@@ -384,11 +384,11 @@ function Navbar() {
 
                 <Link href='/channels' legacyBehavior>
                     <a
-                        className={`group flex items-center justify-center space-x-1 -mb-1 pb-1 border-b-[3px] ${currentPath === '/channels' ? 'border-theme_yellow' : 'hover:border-theme_yellow border-transparent'}`}
+                        className={`group flex items-center justify-center space-x-1 -mb-1 pb-1 border-b-[3px] ${currentPath === '/channels' ? 'border-theme_red' : 'hover:border-theme_red border-transparent'}`}
                         rel="dofollow"
                     >
                         <img src="/channel.png" alt="channel-icon" className='h-5 m' />
-                        <span className={`sm:text-xl xl:text-[28px] text-md text-white text-center mb-0`}>
+                        <span className={`sm:text-xl xl:text-[28px] text-md text-semiblack text-center mb-0`}>
                             Channels
                         </span>
                     </a>
@@ -396,7 +396,7 @@ function Navbar() {
 
                 <Link href='/membership' legacyBehavior>
                     <a
-                        className='sm:text-md text-sm text-semiblack rounded-[22px] text-center px-3 p-1 m-1 bg-theme_yellow hover:scale-105 transition-transform duration-30 block_popunder'
+                        className='sm:text-md text-sm text-white rounded-[22px] text-center px-3 p-1 m-1 bg-theme_red hover:scale-105 transition-transform duration-30 block_popunder'
                         rel="dofollow"
                     >
                         Join Now
@@ -443,7 +443,7 @@ function Navbar() {
                                     width={35}
                                     alt='livesex'
                                 ></img>
-                                <p className='font-bold '>Live Sex</p>
+                                <p className='font-bold text-semiblack'>Live Sex</p>
                             </div>
                         </a>
                     </div>
@@ -454,24 +454,24 @@ function Navbar() {
 
 
                         <div className='relative select-none'>
-                            <div className="flex  bg-semiblack items-center w-[250px] lg:w-[300px] 2xl:w-[700px]  border-[0.8px] border-[#E5E5E5] rounded-[30px] p-0.5 2xl:p-1 2xl:px-4 px-4">
-                                <SearchIcon className="h-5 2xl:h-6 text-[#E5E5E5]" />
+                            <div className="flex  items-center w-[250px] lg:w-[300px] 2xl:w-[700px]  border-[0.8px] border-semiblack rounded-[30px] p-0.5 2xl:p-1 2xl:px-4 px-4">
+                                <SearchIcon className="h-5 2xl:h-6 text-semiblack" />
                                 <input
                                     value={searchKey}
                                     onChange={getSuggestedTags}
                                     ref={searchInputref}
-                                    className="flex-grow bg-transparent outline-none rounded-[15px] pl-2 h-10 text-[16px] text-white"
+                                    className="flex-grow bg-transparent outline-none rounded-[15px] pl-2 h-10 text-[16px] text-semiblack"
                                     type="text"
                                     placeholder="Search your favourite videos"
                                 />
                             </div>
                             {showSuggested &&
-                                <div className=' rounded-[20px] absolute top-[55px] left-0 right-0 max-h-[300px] z-50 overflow-hidden overflow-scroll scrollbar-hide bg-semiblack'>
+                                <div className=' rounded-[20px] absolute top-[55px] left-0 right-0 max-h-[300px] z-50 overflow-hidden overflow-scroll scrollbar-hide bg-white'>
                                     {tags.map(tag => {
                                         return (
                                             <div key={tag} onClick={() => {
                                                 setsearchKey(tag); setshowSuggested(false); router.push(`/search/${tag.trim()}`)
-                                            }} className='flex items-center space-x-2 py-2  px-[50px] cursor-pointer hover:bg-gray-200  text-white hover:text-semiblack'>
+                                            }} className='flex items-center space-x-2 py-2  px-[50px] cursor-pointer hover:bg-gray-300  text-semiblack hover:text-semiblack'>
                                                 <p className='text-[15px] font-inter '>{tag}</p>
 
                                             </div>
@@ -480,7 +480,7 @@ function Navbar() {
                                 </div>
                             }
                         </div>
-                        <button type="submit" className={`ml-2 bg-button hover:bg-button_hover text-white text-sm h-10 px-8 m-1.5 rounded-[20px] transition-all duration-300 ease-in-out ${searchKey ? 'opacity-100 visible' : 'opacity-0 hidden 2xl:flex'}`}    >
+                        <button type="submit" className={`ml-2 bg-button hover:bg-button_hover text-semiblack text-sm h-10 px-8 m-1.5 rounded-[20px] transition-all duration-300 ease-in-out ${searchKey ? 'opacity-100 visible' : 'opacity-0 hidden 2xl:flex'}`}    >
                             Search
                         </button>
 
@@ -493,7 +493,7 @@ function Navbar() {
                             {/* <UserIcon className='h-8 w-8' /> */}
                             {!user &&
                                 <div className='flex items-center space-x-2  font-inter'>
-                                    <p onClick={() => setLoginModalVisible(true)} className=' m-2 rounded hover:text-semiblack hover:bg-gray-200  px-8 rounded-[22px] py-[5px]  cursor-pointer block_popunder border-[0.8px] border-[#E5E5E5] '>Login</p>
+                                    <p onClick={() => setLoginModalVisible(true)} className=' m-2 text-semiblack   hover:bg-gray-200  px-8 rounded-[22px] py-[5px]  cursor-pointer block_popunder border-[0.8px] border-semiblack '>Login</p>
                                     {/* <p onClick={() => { router.push('/account/register') }} className='m-1 underline rounded   pl-2 pr-2  cursor-pointer hover:text-white'>Register</p> */}
                                 </div>
                             }
@@ -508,7 +508,7 @@ function Navbar() {
                                 <a
                                     rel="dofollow" 
                                 >
-                                    <button className="bg-theme_yellow text-semiblack rounded-[22px] font-semibold text-center px-5 p-1.5 m-1 text-md block_popunder hover:scale-105 transition-transform duration-300 text-nowrap">
+                                    <button className="bg-red-500 text-white rounded-[22px] font-semibold text-center px-5 p-1.5 m-1 text-md block_popunder hover:scale-105 transition-transform duration-300 text-nowrap">
                                         Join Now
                                     </button>
                                 </a>
@@ -535,8 +535,8 @@ function Navbar() {
                         return (
                             <Link href={item.href} legacyBehavior key={item.name}>
                                 <a rel="dofollow"
-                                    className={`text-xl 2xl:text-2xl font-semibold text-white cursor-pointer p-1 border-b-4 
-                    ${isActive ? 'border-theme_yellow' : 'border-transparent hover:border-theme_yellow'}
+                                    className={`text-xl 2xl:text-2xl font-semibold text-semiblack cursor-pointer p-1 border-b-4 
+                    ${isActive ? 'border-theme_red' : 'border-transparent hover:border-theme_red'}
                     transition-colors duration-300`}
                                 >
                                     {item.name}
