@@ -62,10 +62,11 @@ function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta property="og:image" content="/logo.png" />
-        <meta property="og:url" content="https://www.chutlunds.com" />
+        <meta property="og:url" content="https://www.Xhamster.gg" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="/logo.png" />
+        <meta name="google-site-verification" content="3xvgXxQ4cIIVGrkT06JZdF2kjYXTdcZKCeZYLIBBMEQ" />
       </Head>
 
       <Script
