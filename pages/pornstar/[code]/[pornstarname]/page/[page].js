@@ -69,6 +69,9 @@ function Index({ video_collection, pages, pornstarInformation, collageImages, po
         }
 
     }
+    function getcurrentyear() {
+        return new Date().getFullYear();
+    }
 
     return (
         <>
