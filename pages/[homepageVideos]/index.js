@@ -30,15 +30,14 @@ function HomepageVideos({ video_collection, pages }) {
             <Head>
                 <title>{`${capitalizeFirstLetter(homepageVideos)} Porn Videos`}</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-                <meta name="description" content={`${capitalizeFirstLetter(homepageVideos)} Porn Videos! - blowjob, japanese, big ass Porn - SpankBang`} />
-                <meta name="keywords" content="blowjob, japanese, big ass, deepthroat, jav, asian" />
+                <meta name="description" content={`${capitalizeFirstLetter(homepageVideos)} Porn Videos!`} />
                 <meta property="og:title" content={`${capitalizeFirstLetter(homepageVideos)} Porn Videos`} />
-                <meta property="og:description" content={`${capitalizeFirstLetter(homepageVideos)} Porn Videos! - blowjob, japanese, big ass Porn - SpankBang`} />
+                <meta property="og:description" content={`${capitalizeFirstLetter(homepageVideos)} Porn Videos!`} />
                 <meta property="og:type" content="website" />
                 <meta name="twitter:title" content={`${capitalizeFirstLetter(homepageVideos)} Porn Videos`} />
-                <meta name="twitter:description" content={`${capitalizeFirstLetter(homepageVideos)} Porn Videos! - blowjob, japanese, big ass Porn - SpankBang`} />
+                <meta name="twitter:description" content={`${capitalizeFirstLetter(homepageVideos)} Porn Videos!`} />
                 <meta name="twitter:card" content="summary_large_image" />
-                <link rel="canonical" href={`https://www.chutlunds.com/${homepageVideos}/`} />
+                <link rel="canonical" href={`https://www.xhamster.gg/${homepageVideos}/`} />
 
             </Head>
             <Header keyword={homepageVideos} pageNumber={currentPageNumberURL} />

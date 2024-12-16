@@ -183,13 +183,13 @@ export default function Home({ video_collection, trendingChannels, tags, trendin
   return (
     <div className=" ">
       <Head>
-        <title>Free Porn Videos and 4K Sex Movies - Chutlunds</title>
-        <meta name="description" content="Chutlunds is the hottest free porn site in the world! Cum like never before and explore millions of fresh and free porn videos! Get lit on Chutlunds!" />
+        <title>"Watch hot porn videos for free at xHamster!"</title>
+        <meta name="description" content="Looking for free porn videos and exclusive XXX movies? Look no further than xHamster. With instant streaming of over 6 million hardcore sex videos from both professionals and amateurs, our high-quality porn tube has everything you need to satisfy your desires. Whether you're looking for sensual solo scenes or wild group sex, xHamster has it all. Join us now and start exploring our vast collection of adult content." />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="msvalidate.01" content="8A6530C78E46DD0011117B2ECB618480" />
-        <meta property="og:title" content="Free Porn Videos and 4K Sex Movies - Chutlunds" />
-        <meta property="og:description" content="Chutlunds is the hottest free porn site in the world! Cum like never before and explore millions of fresh and free porn videos! Get lit on Chutlunds!" />
-        <link rel="canonical" href={`https://www.chutlunds.com/`} />
+        <meta property="og:title" content="Watch hot porn videos for free at xHamster!" />
+        <meta property="og:description" content="Looking for free porn videos and exclusive XXX movies? Look no further than xHamster. With instant streaming of over 6 million hardcore sex videos from both professionals and amateurs, our high-quality porn tube has everything you need to satisfy your desires. Whether you're looking for sensual solo scenes or wild group sex, xHamster has it all. Join us now and start exploring our vast collection of adult content." />
+        <link rel="canonical" href={`https://www.xhamster.gg/`} />
 
       </Head>
 

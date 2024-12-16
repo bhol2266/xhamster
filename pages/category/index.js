@@ -56,16 +56,15 @@ function Index() {
 
         <div className="basicMargin">
             <Head>
-                <title>Chutlunds Categories: Find Your Favorite Free Hardcore Porn Videos</title>
-                <meta name="description" content="  Collections of free Japanese videos, Hentai porn videos, Russian porn videos, Chinese, Asian sex videos, Korean porn video and lot more" />
+                <title>Explore Porn Video Categories and a variety of Sex Niches on xHamster</title>
+                <meta name="description" content="Check out our extensive list of all porn video categories on xHamster, featuring even the rarest sex niches. Discover the XXX videos that cater to your preferences!" />
 
 
-                <meta name="keywords" content="blowjob, japanese, big ass, deepthroat, jav, asian" />
-                <meta property="og:title" content="Chutlunds Categories: Find Your Favorite Free Hardcore Porn Videos" />
-                <meta property="og:description" content="  Collections of free Japanese videos, Hentai porn videos, Russian porn videos, Chinese, Asian sex videos, Korean porn video and lot more" />
-                <meta name="twitter:title" content="Chutlunds Categories: Find Your Favorite Free Hardcore Porn Videos" />
-                <meta name="twitter:description" content=" Collections of free Japanese videos, Hentai porn videos, Russian porn videos, Chinese, Asian sex videos, Korean porn video and lot more" />
-                <link rel="canonical" href={`https://www.chutlunds.com/category`} />
+                <meta property="og:title" content="Explore Porn Video Categories and a variety of Sex Niches on xHamster" />
+                <meta property="og:description" content="Check out our extensive list of all porn video categories on xHamster, featuring even the rarest sex niches. Discover the XXX videos that cater to your preferences!" />
+                <meta name="twitter:title" content="Explore Porn Video Categories and a variety of Sex Niches on xHamster" />
+                <meta name="twitter:description" content="Check out our extensive list of all porn video categories on xHamster, featuring even the rarest sex niches. Discover the XXX videos that cater to your preferences!" />
+                <link rel="canonical" href={`https://www.xhamster.gg/category`} />
 
 
 
@@ -73,11 +72,8 @@ function Index() {
             </Head>
 
 
-            <div className='flex items-center py-2 my-1 justify-between  rounded-lg'>
-                <span className='text-center lg:text-left  flex-grow text-3xl font-Dmsans'>Top Porn Categories</span>
-            </div>
             <h1 className="text-center lg:text-left text-sm md:text-lg  pb-2 my-1 font-inter">
-                Explore a Variety of Free Videos: Japanese, Hentai, Russian, Chinese, Asian, Korean Porn, and More
+                Porn Video Categories
             </h1>
 
 

@@ -129,14 +129,13 @@ function Index({ video_collection, trendingChannels, newChannels }) {
 
                 <Head>
 
-                    <title>Hot Porn Channels and Exclusive Adult Videos - Chutlunds</title>
-                    <meta name="description" content="The Hottest Japanese Porn Movies Divided By Channels! Discover on JAV HD the Best XXX JAV Channels & Free Sex Scenes: JAVHD, CARIBBEANCOM, JAVHUB, JAPANHDV" />
-                    <meta name="keywords" content="porn, xxx, streaming porn, HD porn, HD adult videos, HD pussy videos, sex movies, chutlunds" />
-                    <meta property="og:title" content="Hot Porn Channels and Exclusive Adult Videos - Chutlunds" />
-                    <meta property="og:description" content="The Hottest Japanese Porn Movies Divided By Channels! Discover on JAV HD the Best XXX JAV Channels & Free Sex Scenes: JAVHD, CARIBBEANCOM, JAVHUB, JAPANHDV" />
-                    <meta name="twitter:title" content="Hot Porn Channels and Exclusive Adult Videos - Chutlunds" />
-                    <meta name="twitter:description" content="The Hottest Japanese Porn Movies Divided By Channels! Discover on JAV HD the Best XXX JAV Channels & Free Sex Scenes: JAVHD, CARIBBEANCOM, JAVHUB, JAPANHDV" />
-                    <link rel="canonical" href={`https://www.chutlunds.com/channels`} />
+                    <title>Top Porn Channels: Leading Sex Video Producers & Creators | xHamster</title>
+                    <meta name="description" content="Explore an extensive catalog of the top porn tube channels featuring talented sex video producers and XXX creators. Discover complimentary films from your preferred adult paysites on xHamster!" />
+                    <meta property="og:title" content="Top Porn Channels: Leading Sex Video Producers & Creators | xHamster" />
+                    <meta property="og:description" content="Explore an extensive catalog of the top porn tube channels featuring talented sex video producers and XXX creators. Discover complimentary films from your preferred adult paysites on xHamster!" />
+                    <meta name="twitter:title" content="Top Porn Channels: Leading Sex Video Producers & Creators | xHamster" />
+                    <meta name="twitter:description" content="Explore an extensive catalog of the top porn tube channels featuring talented sex video producers and XXX creators. Discover complimentary films from your preferred adult paysites on xHamster!" />
+                    <link rel="canonical" href={`https://www.xhamster.gg/channels`} />
 
 
 

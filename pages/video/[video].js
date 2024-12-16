@@ -162,15 +162,15 @@ const Videoplayer = () => {
             {preloadedVideoQuality.length > 0 && !noVideo ? (
                 <>
                     <Head>
-                        <title>{`${noVideo ? videoTitleBackup : videoDetails.Title} - ${noVideo ? "720p" : videolinkQualitiesScreenshots.video_qualities_available[videolinkQualitiesScreenshots.video_qualities_available.length - 1].toUpperCase()}`} | Chutlunds</title>
-                        <meta name="description" content={`${capitalizeFirstLetter(noVideo ? videoTitleBackup : videoDetails.Title)} sex video`} />
+                        <title>{`${noVideo ? videoTitleBackup : videoDetails.Title} - ${noVideo ? "720p" : videolinkQualitiesScreenshots.video_qualities_available[videolinkQualitiesScreenshots.video_qualities_available.length - 1].toUpperCase()}`} | Xhamster</title>
+                        <meta name="description" content={`Watch  ${capitalizeFirstLetter(noVideo ? videoTitleBackup : videoDetails.Title)} on Xhamster `} />
                         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
                         <meta name="keywords" content={tagString} />
                         <meta property="og:title" content={`${noVideo ? videoTitleBackup : videoDetails.Title} - ${noVideo ? "720p" : videolinkQualitiesScreenshots.video_qualities_available[videolinkQualitiesScreenshots.video_qualities_available.length - 1].toUpperCase()}`} />
-                        <meta property="og:description" content={`${capitalizeFirstLetter(noVideo ? videoTitleBackup : videoDetails.Title)} sex video`} />
+                        <meta property="og:description" content={`Watch  ${capitalizeFirstLetter(noVideo ? videoTitleBackup : videoDetails.Title)} on Xhamster `} />
                         <meta name="twitter:title" content={`${noVideo ? videoTitleBackup : videoDetails.Title} - ${noVideo ? "720p" : videolinkQualitiesScreenshots.video_qualities_available[videolinkQualitiesScreenshots.video_qualities_available.length - 1].toUpperCase()}`} />
-                        <meta name="twitter:description" content={`${capitalizeFirstLetter(noVideo ? videoTitleBackup : videoDetails.Title)} sex video`} />
-                        <link rel="canonical" href={`https://www.chutlunds.com/video/${video}`} />
+                        <meta name="twitter:description" content={`Watch  ${capitalizeFirstLetter(noVideo ? videoTitleBackup : videoDetails.Title)} on Xhamster `} />
+                        <link rel="canonical" href={`https://www.Xhamster.gg/video/${video}`} />
 
                     </Head>
 
@@ -213,8 +213,8 @@ const Videoplayer = () => {
 
                 <>
                     <Head>
-                        <title>{`${videoTitleBackup}`} | Chutlunds</title>
-                        <meta name="description" content={`${capitalizeFirstLetter(videoTitleBackup)} sex video`} />
+                        <title>{`${videoTitleBackup}`} | Xhamster</title>
+                        <meta name="description" content={`Watch ${capitalizeFirstLetter(videoTitleBackup)} on Xhamster `} />
                         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
                     </Head>
                     <div>

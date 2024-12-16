@@ -31,15 +31,15 @@ function Category({ video_collection, pages }) {
     return (
         <>
             <Head>
-                <title>{capitalizeFirstLetter(category)} sex videos - Free download | Chutlunds | Page {page}</title>
-                <meta name="description" content={`Watch free collection of ${capitalizeFirstLetter(category)} sex videos, ${category} porn videos, latest ${category} videos in high quality only on Chutlunds.`} />
+                <title>{capitalizeFirstLetter(category)} sex videos - | Xhamster | Page {page}</title>
+                <meta name="description" content={`Watch free collection of ${capitalizeFirstLetter(category)} sex videos, ${category} porn videos, latest ${category} videos in high quality only on Xhamster.`} />
 
                 <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-                <meta property="og:title" content={`${capitalizeFirstLetter(category)} sex videos | Chutlunds | Page ${page}`} />
-                <meta property="og:description" content={`Watch free collection of ${capitalizeFirstLetter(category)} sex videos, ${category} porn videos, latest ${category} videos in high quality only on Chutlunds.`} />
-                <meta name="twitter:title" content={`${capitalizeFirstLetter(category)} sex videos | Chutlunds | Page ${page}`} />
-                <meta name="twitter:description" content={`Watch free collection of ${capitalizeFirstLetter(category)} sex videos, ${category} porn videos, latest ${category} videos in high quality only on Chutlunds.`} />
-                <link rel="canonical" href={`https://www.chutlunds.com/category/${category}/page/${page}`} />
+                <meta property="og:title" content={`${capitalizeFirstLetter(category)} sex videos | Xhamster | Page ${page}`} />
+                <meta property="og:description" content={`Watch free collection of ${capitalizeFirstLetter(category)} sex videos, ${category} porn videos, latest ${category} videos in high quality only on Xhamster.`} />
+                <meta name="twitter:title" content={`${capitalizeFirstLetter(category)} sex videos | Xhamster | Page ${page}`} />
+                <meta name="twitter:description" content={`Watch free collection of ${capitalizeFirstLetter(category)} sex videos, ${category} porn videos, latest ${category} videos in high quality only on Xhamster.`} />
+                <link rel="canonical" href={`https://www.Xhamster.gg/category/${category}/page/${page}`} />
             </Head>
 
             <Header keyword={category} pageNumber={currentPageNumberURL} />

@@ -92,14 +92,13 @@ function Index({ video_collection, pages, channel_name, channel_link, collageIma
 
 
             <Head>
-                <title>{`${capitalizeFirstLetter(channel_name.replace('+', " ").replace("+", " "))} Porn Videos - Chutlunds`}</title>
-                <meta name="description" content={`Check out the best porn videos and playlists from channel ${capitalizeFirstLetter(channel_name.replace('+', " ").replace("+", " "))}`} />
-                <meta name="keywords" content="porn, xxx, streaming porn, HD porn, HD adult videos, HD pussy videos, sex movies, chutlunds" />
-                <meta property="og:title" content={`${capitalizeFirstLetter(channel_name.replace('+', " ").replace("+", " "))} Porn Videos - Chutlunds`} />
-                <meta property="og:description" content={`Check out the best porn videos and playlists from channel ${capitalizeFirstLetter(channel_name.replace('+', " ").replace("+", " "))}`} />
-                <meta name="twitter:title" content={`${capitalizeFirstLetter(channel_name.replace('+', " ").replace("+", " "))} Porn Videos - Chutlunds`} />
-                <meta name="twitter:description" content={`Check out the best porn videos and playlists from channel ${capitalizeFirstLetter(channel_name.replace('+', " ").replace("+", " "))}`} />
-                <link rel="canonical" href={`https://www.chutlunds.com/channels/${code}/${channelname}`} />
+                <title>{`Free ${capitalizeFirstLetter(channel_name.replace('+', " ").replace("+", " "))} Porn Videos - Xhamster`}</title>
+                <meta name="description" content={`Free ${capitalizeFirstLetter(channel_name.replace('+', " ").replace("+", " "))} Porn Videos. Discover ${capitalizeFirstLetter(channel_name.replace('+', " ").replace("+", " "))} sex videos featuring porn stars fucking in XXX scenes, including amateur, anal, blowjob & more!`} />
+                <meta property="og:title" content={`${capitalizeFirstLetter(channel_name.replace('+', " ").replace("+", " "))} Porn Videos - Xhamster`} />
+                <meta property="og:description" content={`Free ${capitalizeFirstLetter(channel_name.replace('+', " ").replace("+", " "))} Porn Videos. Discover ${capitalizeFirstLetter(channel_name.replace('+', " ").replace("+", " "))} sex videos featuring porn stars fucking in XXX scenes, including amateur, anal, blowjob & more!`} />
+                <meta name="twitter:title" content={`${capitalizeFirstLetter(channel_name.replace('+', " ").replace("+", " "))} Porn Videos - Xhamster`} />
+                <meta name="twitter:description" content={`Free ${capitalizeFirstLetter(channel_name.replace('+', " ").replace("+", " "))} Porn Videos. Discover ${capitalizeFirstLetter(channel_name.replace('+', " ").replace("+", " "))} sex videos featuring porn stars fucking in XXX scenes, including amateur, anal, blowjob & more!`} />
+                <link rel="canonical" href={`https://www.Xhamster.gg/channels/${code}/${channelname}`} />
 
             </Head>
 
