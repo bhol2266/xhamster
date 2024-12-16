@@ -67,6 +67,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="/logo.png" />
         <meta name="google-site-verification" content="3xvgXxQ4cIIVGrkT06JZdF2kjYXTdcZKCeZYLIBBMEQ" />
+        <meta name="clckd" content="989abd1ff7e1399f3e4fc8bef01007d3" />
       </Head>
 
       <Script
