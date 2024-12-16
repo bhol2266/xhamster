@@ -33,4 +33,4 @@ const bannedUrls = ["https://www.chutlunds.com/video/6j1k7*big+ass+cam"
     , "https://www.chutlunds.com/video/85685*ososmznzkalans"
     , "https://www.chutlunds.com/video/609ve*simplegirl1996+2021+09+24"]
 
-    export default bannedUrls;
+    export default bannedUrls;  
