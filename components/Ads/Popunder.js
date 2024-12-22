@@ -7,6 +7,11 @@ function PopunderAds() {
         currentHost = window.location.host;
     }
 
+    var randLetter = String.fromCharCode(65 + Math.floor(Math.random() * 26));
+    var uniqid = randLetter + Date.now();
+
+
+
     // Check if the app is running on localhost
     const isLocalhost = currentHost.includes('localhost')
 
