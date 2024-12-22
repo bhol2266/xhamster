@@ -22,26 +22,29 @@ function BannerAds() {
 
             {/* Exoclick Multiformat  */}
 
-            {/* <Script
+            
+            {/* Exoclick Multiformat  */}
+
+
+
+            <Script
+                strategy="afterInteractive"
+                src="https://a.magsrv.com/ad-provider.js"
                 async
                 type="application/javascript"
-                src="https://a.magsrv.com/ad-provider.js"
-                strategy="afterInteractive" // Ensures the script runs after the page is interactive
             />
+
+            {/* Inline script to initialize the AdProvider */}
             <Script
-                id="ad-provider-init"
-                strategy="afterInteractive" // Ensures this script runs after the external script
-            >
-                {`
-        (window.AdProvider = window.AdProvider || []).push({ "serve": {} });
-      `}
-            </Script>
-            <ins className="eas6a97888e38" data-zoneid="5390772"></ins> */}
+            id={uniqid}
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                    __html: `(AdProvider = window.AdProvider || []).push({ "serve": {} });`,
+                }}
+            />
 
-
-
-
-  
+            {/* The ad element */}
+            <ins className="eas6a97888e38" data-zoneid="5500694"></ins>
 
 
         </div>
