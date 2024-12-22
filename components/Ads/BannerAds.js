@@ -8,7 +8,7 @@ function BannerAds() {
     return (
         <div className="">
 
-            <Script
+            {/* <Script
                 type="text/javascript"
                 src="//cdn.tsyndicate.com/sdk/v1/bi.js"
                 data-ts-spot="da8ab6fd16ed4d67a5b88a31e2d79a1a"
@@ -17,10 +17,7 @@ function BannerAds() {
                 data-ts-extid="{extid}"
                 async
                 defer
-            />
-
-
-            {/* Exoclick Multiformat  */}
+            /> */}
 
             
             {/* Exoclick Multiformat  */}
