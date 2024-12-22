@@ -3,9 +3,11 @@ import { useContext, useEffect, useState } from "react";
 
 import videosContext from '../context/videos/videosContext';
 import PopunderAds from './Ads/Popunder';
-
+import { bannedKeywords } from '../JsonData/BannedKeywords';
 function VideoThumbnail({ details, type }) {
 
+
+    const containsBannedKeywords = bannedKeywords.some(keyword => details.title.toLowerCase().includes(keyword.toLowerCase()));
 
     const [videoPage, setVideoPage] = useState(false);
     const [showPoster, setShowPoster] = useState(true);
@@ -54,7 +56,7 @@ function VideoThumbnail({ details, type }) {
         <div>
             <a href={`/video/${keyy}*${title}`} onClick={onClickHandler} data-title={video.title}>
                 <div className="animate-fade flex flex-col items-start justify-center cursor-pointer rounded-md overflow-hidden transform transition duration-150 mb-3 2xl:mb-4">
-                    <div className={`relative w-full overflow-hidden  ${viewType === "grid" ? "aspect-custom md:aspect-video" : "aspect-video"}`}>
+                    <div className={`relative w-full overflow-hidden  ${viewType === "grid" ? "aspect-custom md:aspect-video" : "aspect-video"} ${containsBannedKeywords ? "hidden" : ""}`}>
                         <img
                             className="absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-300 ease-in-out"
                             src={video.thumbnail}

@@ -15,6 +15,8 @@ import { BannedUrls } from '../JsonData/BannedUrls';
 import { useEffect } from 'react';
 import Outstreams from '../components/Ads/Outstream';
 import ClickAduBannerAds from '../components/Ads/ClickAduBannerAds';
+import { bannedKeywords } from '../JsonData/BannedKeywords';
+
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -25,6 +27,11 @@ function MyApp({ Component, pageProps }) {
     const currentUrl = window.location.href;
     if (BannedUrls.includes(currentUrl)) {
       router.push('/not-found'); // Redirect to a different page or a 404 page
+    }
+   
+    const containsBannedKeywords = bannedKeywords.some(keyword => currentUrl.toLowerCase().includes(keyword.toLowerCase()));
+    if (containsBannedKeywords) {
+      router.push("/404")
     }
 
     const handleRouteChangeStart = (url) => {
