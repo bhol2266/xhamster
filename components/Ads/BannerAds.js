@@ -6,7 +6,7 @@ function BannerAds() {
     var randLetter = String.fromCharCode(65 + Math.floor(Math.random() * 26));
     var uniqid = randLetter + Date.now();
     return (
-        <div className="">
+        <div className="w-screen">
 
             {/* <Script
                 type="text/javascript"
