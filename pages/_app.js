@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }) {
     if (BannedUrls.includes(currentUrl)) {
       router.push('/not-found'); // Redirect to a different page or a 404 page
     }
-   
+
     const containsBannedKeywords = bannedKeywords.some(keyword => currentUrl.toLowerCase().includes(keyword.toLowerCase()));
     if (containsBannedKeywords) {
       router.push("/404")
@@ -74,7 +74,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="twitter:image" content="/logo.png" />
         <meta name="google-site-verification" content="3xvgXxQ4cIIVGrkT06JZdF2kjYXTdcZKCeZYLIBBMEQ" />
         <meta name="clckd" content="989abd1ff7e1399f3e4fc8bef01007d3" />
-        <meta name="6a97888e-site-verification" content="a08d328f200c660d81b1e7a9240a01d5"/>      </Head>
+        <meta name="6a97888e-site-verification" content="a08d328f200c660d81b1e7a9240a01d5" />      </Head>
 
       <Script
         strategy="afterInteractive"
@@ -100,12 +100,11 @@ function MyApp({ Component, pageProps }) {
 
 
           <div className='sm:flex items-center justify-center sm:w-1/2 lg:w-1/4 mx-auto mt-4'>
+            <BannerAds />
             <Outstreams />
             <Outstreams />
             <Outstreams />
             <BannerAds />
-            <ClickAduBannerAds />
-            <ClickAduBannerAds />
           </div>
           {currentRoute != "/membership" && <Footer />}
 
