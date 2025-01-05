@@ -32,33 +32,17 @@ function PopunderAds() {
                 //     defer
                 // />
 
-
+//Exoclick ads
                 <>
                     <Script
-                        id={uniqid}
-                        strategy="beforeInteractive" // or "afterInteractive", depending on when you want the script to load
-                        dangerouslySetInnerHTML={{
-                            __html: `
-        var ad_idzone = "5500684",
-            ad_popup_fallback = false,
-            ad_popup_force = false,
-            ad_chrome_enabled = true,
-            ad_new_tab = true,
-            ad_frequency_period = 1,
-            ad_frequency_count = 3,
-            ad_trigger_method = 3,
-            ad_trigger_delay = 0,
-            ad_capping_enabled = true;
-      `,
+                        src="/popunderAds.js"
+                        strategy="lazyOnload"
+                        onLoad={() => {
+                            console.log("Popunder Ad configuration script loaded successfully.");
                         }}
                     />
 
-                    {/* External Script */}
-                    <Script
-                        src="https://a.pemsrv.com/popunder1000.js"
-                        strategy="beforeInteractive" // or "afterInteractive", depending on your needs
-                        type="application/javascript"
-                    /></>
+                </>
 
             )}
         </div>

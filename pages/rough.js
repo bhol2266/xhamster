@@ -1,15 +1,20 @@
 import Script from 'next/script';
-import ClickAduBannerAds from '../components/Ads/ClickAduBannerAds';
 
 function rough() {
     return (
 
-        <div className="w-screen h-screen m-auto">
+        <div className="">
+ 
+            <a href="/category">Click me</a>
 
-            <ClickAduBannerAds />
 
-
-
+            <Script
+                src="/sc.js"
+                strategy="lazyOnload"
+                onLoad={() => {
+                    console.log("Popunder Ad configuration script loaded successfully.");
+                }}
+            />
 
         </div>
 
@@ -17,3 +22,4 @@ function rough() {
 }
 
 export default rough;
+
