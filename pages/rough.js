@@ -5,7 +5,7 @@ function rough() {
 
         <div className="">
  
-            <a href="/category">Click me</a>
+            {/* <a href="/category">Click me</a> */}
 
 
             <Script
