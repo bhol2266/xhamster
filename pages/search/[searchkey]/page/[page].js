@@ -13,7 +13,9 @@ function Search({ video_collection, pages }) {
     const router = useRouter();
     const { searchkey, page } = router.query
 
-
+    function getcurrentyear() {
+        return new Date().getFullYear();
+      }
 
     const currentPageNumberURL = page
 
