@@ -4,6 +4,7 @@ import { useContext, useEffect, useRef, useState, } from 'react';
 import ReactCountryFlag from "react-country-flag";
 import { UserAuth } from "../context/AuthContext";
 import videosContext from '../context/videos/videosContext';
+import { MdLiveTv } from "react-icons/md";
 
 import { Fragment } from 'react';
 
@@ -387,7 +388,8 @@ function Navbar() {
                         className={`group flex items-center justify-center space-x-1 -mb-1 pb-1 border-b-[3px] ${currentPath === '/channels' ? 'border-theme_red' : 'hover:border-theme_red border-transparent'}`}
                         rel="dofollow"
                     >
-                        <img src="/channel.png" alt="channel-icon" className='h-5 m' />
+                        <MdLiveTv className='h-5 w-5 text-gray-700' />
+                       
                         <span className={`sm:text-xl xl:text-[28px] text-md text-semiblack text-center mb-0`}>
                             Channels
                         </span>
