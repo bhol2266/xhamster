@@ -105,6 +105,8 @@ function MyApp({ Component, pageProps }) {
             <Outstreams />
             <Outstreams />
             <BannerAds />
+            <ClickAduBannerAds />
+            <ClickAduBannerAds />
           </div>
           {currentRoute != "/membership" && <Footer />}
 
