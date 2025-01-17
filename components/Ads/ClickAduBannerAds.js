@@ -7,17 +7,17 @@ function ClickAduBannerAds() {
 
             <Script
                 data-cfasync="false"
-                src="//bullionglidingscuttle.com/lv/esnk/2044439/code.js"
+                src="//bullionglidingscuttle.com/lv/esnk/2051947/code.js"
                 strategy="afterInteractive"
                 async
-                className="__clb-2044439"
+                className="__clb-2051947"
             />
             <Script
                 data-cfasync="false"
-                src="//bullionglidingscuttle.com/lv/esnk/2044438/code.js"
+                src="//bullionglidingscuttle.com/lv/esnk/2051945/code.js"
                 strategy="afterInteractive"
                 async
-                className="__clb-2044438"
+                className="__clb-2051945"
             />
 
 
