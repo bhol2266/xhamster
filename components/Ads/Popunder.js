@@ -41,11 +41,12 @@ function PopunderAds() {
                         }}
                     /> */}
 
-                    <Script
+                    {/* <Script
                         src="//diagramjawlineunhappy.com/t/9/fret/meow4/2051092/9e0e999e.js"
                         data-cfasync="false"
                         strategy="afterInteractive"
-                    />                </>
+                    /> */}
+                </>
 
             )}
         </div>
