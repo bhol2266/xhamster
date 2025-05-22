@@ -328,6 +328,8 @@ export async function getStaticProps({ req, res }) {
     body: JSON.stringify(parcelData),
   });
   const ress = await rawResponse.json();
+
+
   var trendingCreators = []
 
 
