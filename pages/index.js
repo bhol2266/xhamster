@@ -317,7 +317,7 @@ export default function Home({ finalDataArray, trendingChannels, tags, trendingP
 export async function getStaticProps({ req, res }) {
   const parcelData = { href: "https://spankbang.party/" };
 
-  const API_URL = `https://chutlunds-api-hongkong.vercel.app/api/getHomePageVideos`;
+  const API_URL = `https://chutlunds-api-india.vercel.app/api/getHomePageVideos`;
 
   const rawResponse = await fetch(API_URL, {
     headers: {
