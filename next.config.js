@@ -22,8 +22,9 @@ module.exports = {
   }, 
   env: {
     CLOUDFLARE_STORAGE: 'https://pub-46cdeefeaf774247ab99232ab1ebaa66.r2.dev/',
-    BACKEND_URL: 'https://cloudflare-workers-project.ukdevelopers007.workers.dev/chutlunds/',
-    FRONTEND_URL: 'https://www.xhamster.gg/',
+    // BACKEND_URL: 'https://cloudflare-workers-project.ukdevelopers007.workers.dev/chutlunds/',
+    BACKEND_URL: 'https://cloudflare-workers-project.bhola2266.workers.dev/chutlunds/',
+    \FRONTEND_URL: 'https://www.xhamster.gg/',
     // FRONTEND_URL: 'http://localhost:3000/',
     REDIRECT_URI: "http://localhost:3000/api/auth/callback",
     FACEBOOK_APP_SECRET: '691004714be90ba61d9ab8e0ba0d0c5e',
