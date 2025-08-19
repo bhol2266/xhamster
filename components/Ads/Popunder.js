@@ -10,8 +10,7 @@ function PopunderAds() {
   }
 
   // Check if the app is running on localhost
-//   const isLocalhost = currentHost.includes("localhost");
-  const isLocalhost = false
+  const isLocalhost = currentHost.includes("localhost");
 
   return (
     <div className="flex items-center justify-center">
