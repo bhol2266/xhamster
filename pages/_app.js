@@ -2,20 +2,17 @@ import Head from 'next/head';
 import Router, { useRouter } from 'next/router';
 import Script from 'next/script';
 import NProgress from 'nprogress';
-import BannerAds from '../components/Ads/BannerAds';
-import Banner_for_chutlund2 from '../components/Banner_for_chutlund2';
+import { useEffect } from 'react';
+import ClickAduBannerAds from '../components/Ads/ClickAduBannerAds';
 import Footer from '../components/Footer';
 import { LoginModal } from '../components/ModalLogin';
 import Navbar from '../components/Navbar';
 import { AuthContextProvider } from '../context/AuthContext';
 import VideoState from '../context/videos/VideoState';
+import { bannedKeywords } from '../JsonData/BannedKeywords';
+import { BannedUrls } from '../JsonData/BannedUrls';
 import '../styles/globals.css';
 import '../styles/nProgress.css';
-import { BannedUrls } from '../JsonData/BannedUrls';
-import { useEffect } from 'react';
-import Outstreams from '../components/Ads/Outstream';
-import ClickAduBannerAds from '../components/Ads/ClickAduBannerAds';
-import { bannedKeywords } from '../JsonData/BannedKeywords';
 
 
 function MyApp({ Component, pageProps }) {
@@ -100,11 +97,12 @@ function MyApp({ Component, pageProps }) {
 
 
           <div className='sm:flex items-center justify-center sm:w-1/2 lg:w-1/4 mx-auto mt-4'>
-            <BannerAds />
-            <Outstreams />
-            <Outstreams />
-            <Outstreams />
-            <BannerAds />
+            
+            
+            
+            
+            
+            <ClickAduBannerAds />
             <ClickAduBannerAds />
             <ClickAduBannerAds />
           </div>

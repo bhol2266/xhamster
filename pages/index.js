@@ -3,23 +3,21 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useContext, useEffect, useState } from 'react';
 import ReactCountryFlag from "react-country-flag";
-import Header from "../components/searchPage/Header";
 import Pagination from '../components/Pagination';
+import Header from "../components/searchPage/Header";
 
-import BannerAds from '../components/Ads/BannerAds';
-import Sidebar from '../components/Sidebar';
 import Videos from '../components/Videos';
 import Category_slider from '../components/category_slider';
 import Channels_slider from '../components/channels_slider';
 import Pornstar_slider from '../components/pornstar_slider';
 
+import Link from "next/link";
 import Homepage_Title from '../components/Homepage_Title';
-import { getFirstKeyword, getSubscribedChannels, getSubscribedPornstars, updateCountry } from '../config/firebase/lib';
+import Creators_slider from "../components/creators_slider";
+import { getFirstKeyword, updateCountry } from '../config/firebase/lib';
 import { getLanguge } from '../config/getLanguge';
 import { fetchVideos, getViewChannels, getViewCreators, getViewPornstars, shuffle } from '../config/utils';
 import videosContext from '../context/videos/videosContext';
-import Link from "next/link";
-import Creators_slider from "../components/creators_slider";
 
 export default function Home({ finalDataArray, trendingChannels, tags, trendingPornstars, trendingCreators }) {
   const { currentLocation, setcurrentLocation, viewType, setViewType } = useContext(videosContext);
@@ -306,7 +304,7 @@ export default function Home({ finalDataArray, trendingChannels, tags, trendingP
         <a href="https://www.fuckvideo.live/">.</a>
         <a href="https://www.chutlunds.com/">.</a>
         <a href="https://www.desikahaniya.in/">.</a>
-        <BannerAds />
+        
 
       </footer>
     </div>

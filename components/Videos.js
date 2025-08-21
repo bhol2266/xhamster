@@ -2,11 +2,7 @@ import { useRouter } from "next/router";
 import { useContext, useEffect, useState } from "react";
 import videosContext from '../context/videos/videosContext';
 import VideoThumbnail from "./VideoThumbnail";
-
-import {
-    LightningBoltIcon,
-} from '@heroicons/react/solid';
-import InterstitialAds from "./Ads/InterstitialAds";
+import { LightningBoltIcon} from '@heroicons/react/solid';
 import PopunderAds from "./Ads/Popunder";
 
 function Videos({ data, type }) {
@@ -59,7 +55,6 @@ function Videos({ data, type }) {
                 </>
             }
 
-            <InterstitialAds />
         </div>
     );
 }

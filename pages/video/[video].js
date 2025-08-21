@@ -6,12 +6,11 @@ import { getCookie } from "cookies-next";
 import Head from 'next/head';
 import { useRouter } from "next/router";
 import { useEffect, useState } from 'react';
-import BannerAds from '../../components/Ads/BannerAds';
-import VideoPlayer from '../../components/VideoPlayer';
-import Videos from '../../components/Videos';
+import { useMediaQuery } from 'react-responsive';
 import { BeatLoader } from 'react-spinners';
 import bannedUrls from '../../bannedUrls';
-import { useMediaQuery } from 'react-responsive';
+import VideoPlayer from '../../components/VideoPlayer';
+import Videos from '../../components/Videos';
 
 const Videoplayer = () => {
     const router = useRouter();
@@ -207,7 +206,7 @@ const Videoplayer = () => {
 
                     {latestVideo.length !== 0 && <Videos data={latestVideo} />}
 
-                    <BannerAds />
+                    
                 </>
             ) : (
 
