@@ -208,7 +208,7 @@ function Navbar() {
 
                                 <div className='flex items-center'>
 
-                                    <div onClick={handleSearchIconClick} className=' lg:hidden mr-2 cursor-pointer p-2  hover:bg-button rounded-md '>
+                                    <div onClick={handleSearchIconClick} className=' lg:hidden mr-2 cursor-pointer p-2  hover:bg-button rounded-md block_popunder'>
                                         <SearchIcon className='h-6 w-6 ' />
                                     </div>
 
