@@ -322,7 +322,7 @@ function Navbar() {
                     )}
                 </Disclosure>
 
-                <div className={`flex flex-col relative p-1 ${searchBarVisibility}  transition ease-in-out delay-150 mt-2 `}>
+                <div className={`flex flex-col relative p-1 ${searchBarVisibility}  transition ease-in-out delay-150 mt-2 block_popunder`}>
 
 
                     <form className="flex w-full items-center" onSubmit={goSearch}>
@@ -475,7 +475,7 @@ function Navbar() {
 
 
                         <div className='relative select-none'>
-                            <div className="flex  items-center w-[250px] lg:w-[300px] 2xl:w-[700px]  border-[0.8px] border-semiblack rounded-[30px] p-0.5 2xl:p-1 2xl:px-4 px-4">
+                            <div className="flex  items-center w-[250px] lg:w-[300px] 2xl:w-[700px]  border-[0.8px] border-semiblack rounded-[30px] p-0.5 2xl:p-1 2xl:px-4 px-4 block_popunder">
                                 <SearchIcon className="h-5 2xl:h-6 text-semiblack" />
                                 <input
                                     value={searchKey}
